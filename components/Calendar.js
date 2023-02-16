@@ -93,7 +93,7 @@ function Header(props) {
     </>
   );
 }
-//Year,Monty,date
+
 function Body(props) {
   const [totalDays, setTotalDays] = useState({});
   const [pressedDate, setPressedDate] = useState({
@@ -108,8 +108,8 @@ function Body(props) {
   }, [year, month, date]);
 
   const getTotalDays = (year, month) => {
-    const previousMonthLastDate = new Date(year, month - 1, 0).getDate(); //이 전달의 마지막 날짜 체크
-    const previousMonthLastDay = new Date(year, month - 1, 0).getDay(); //이 전 달의 마지막 날짜의 요일
+    const previousMonthLastDate = new Date(year, month - 1, 0).getDate();
+    const previousMonthLastDay = new Date(year, month - 1, 0).getDay();
     const currentMonthLastDate = new Date(year, month, 0).getDate();
     const currentMonthLastDay = new Date(year, month, 0).getDay();
 
@@ -146,7 +146,7 @@ function Body(props) {
       props.moveToSpecificYearAndMonth(pressedDate.year, pressedDate.month);
     }
   };
-  //{({ pressed }) => pressed && styles.pressedItem}
+
   return (
     <View>
       <View style={S.dayOfWeek}>
