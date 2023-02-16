@@ -3,9 +3,9 @@ import { StyleSheet, Text, View } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { FontAwesome5 } from "@expo/vector-icons";
 
-import Home from "./screens/Home";
-import Calendar from "./screens/Calendar";
-import Library from "./screens/Library";
+import HomePage from "./screens/HomePage";
+import CalendarPage from "./screens/CalendarPage";
+import LibraryPage from "./screens/LibraryPage";
 import Mypage from "./screens/Mypage";
 import { NavigationContainer } from "@react-navigation/native";
 
@@ -42,9 +42,9 @@ export default function App() {
             tabBarInactiveTintColor: "gray",
           })}
         >
-          <NavigationTab.Screen name="Home" component={Home} />
-          <NavigationTab.Screen name="Calendar" component={Calendar} />
-          <NavigationTab.Screen name="Library" component={Library} />
+          <NavigationTab.Screen name="Home" component={HomePage} />
+          <NavigationTab.Screen name="Calendar" component={CalendarPage} />
+          <NavigationTab.Screen name="Library" component={LibraryPage} />
           <NavigationTab.Screen name="Mypage" component={Mypage} />
         </NavigationTab.Navigator>
       </NavigationContainer>

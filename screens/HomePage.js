@@ -1,11 +1,11 @@
 import { View, Text } from "react-native";
 
-function Calendar() {
+function HomePage() {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Calendar</Text>
+      <Text>Home</Text>
     </View>
   );
 }
 
-export default Calendar;
+export default HomePage;
